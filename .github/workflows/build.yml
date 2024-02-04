@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dumpexec.deb
-          path: .dumpexec.deb
+          path: dumpexec.deb
   update-release:
     name: Release .tipa
     runs-on: ubuntu-latest
