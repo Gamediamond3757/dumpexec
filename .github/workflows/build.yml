@@ -18,6 +18,9 @@ jobs:
         with:
           submodules: true
 
+      - name: Install Theos
+        run: brew install ldid
+        
       - name: Make Bootstrap Package
         run: ./build_deb.sh
 
