@@ -20,5 +20,3 @@ ldid -Sent.plist package/usr/bin/dumpexec
 sudo find ./ -name ".DS_Store" -depth -exec rm {} \;
 dpkg-deb -Zgzip -b package dumpexec.deb
 
-scp dumpexec.deb root@$IP:/var/root
-ssh root@$IP dpkg -i /var/root/dumpexec.deb
